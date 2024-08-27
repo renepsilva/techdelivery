@@ -1,0 +1,18 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(main.css);
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root{
+    --cor-principal: #7447E1;
+    --cor-de-fundo: #FFFFFF;
+    --cor-titulos-primaria: #FFFFFF;
+    --cor--titulos-secundaria: #000000;
+    --cor-subtitulos: #353535;
+    --cor-subtitulos-secundaria: #353535;
+    --font-principal: "League Spartan", sans-serif;
+}
+
+body{
+    scroll-behavior: unset;
+}

@@ -1,0 +1,982 @@
+.cabecalho_menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    transition: ease-in 0.5s;
+    background-image: url(Group\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    padding-right: 2.2em;
+    padding-top: 1em;
+}
+
+.cabecalho{
+    background-color: #ffffffff;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container img.logo-tech{
+    padding-right: 8.5em;
+}
+
+label{
+    margin-right: 15px;
+}
+
+.container_imagem{
+    padding-left: 1em;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 35vw;
+    transition: 0.3s ease-in;
+}
+
+.container_botao:checked~.lista-menu{
+    display: block;
+    transition: 0.3s ease-in;
+}
+
+.container_botao{
+    display: none;
+}
+
+.lista-menu-titulo,
+.lista-menu-item{
+    padding: 0.7em;
+    background-color: var(--cor-principal);
+    transition: 0.3s ease-in;
+}
+
+.lista-menu-titulo{
+    color: var(--cor-titulos-primaria);
+    font-family: var(--font-principal);
+    font-weight: 800;
+    font-size: 1em;
+    transition: 0.3s ease-in;
+}
+
+.lista-menu-link{
+    color: var(--cor-titulos-primaria);
+    font-family: var(--font-principal);
+    transition: 0.3s ease-in;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.lista-menu-link:hover{
+    color: var(--cor-subtitulos);
+}
+
+.peca-agora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5em 0em 0em 0em;
+}
+
+.peca-agora img{
+  max-width: 280px;
+  max-height: 175px;
+}
+
+.texto-peca-agora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.texto-peca-agora h1{
+    font-size: 2em;
+    max-width: 70%;
+    font-family: var(--font-principal);
+    font-weight: 800;
+}
+
+.texto-peca-agora p{
+    font-size: 1.5em;
+    max-width: 90%;
+    margin-top: 0.8em;
+    font-family: var(--font-principal);
+    color: var(--cor-subtitulos);
+    font-weight: 500;
+}
+
+.btn-peca-agora{
+    margin-top: 1.5em;
+    font-size: 1.7em;
+    padding: 0.5em;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: var(--font-principal);
+    background-color: var(--cor-principal);
+    color: var(--cor-de-fundo);
+    cursor: pointer;
+}
+
+.btn-peca-agora:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.sobre-nos{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    background-color: var(--cor-principal);
+}
+
+.sobre-nos-texto{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+.sobre-nos-texto h2{
+    color: var(--cor-titulos-primaria);
+    font-family: var(--font-principal);
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.sobre-nos-texto p{
+    color: var(--cor--titulos-secundaria);
+    font-family: var(--font-principal);
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.security{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.security-texto{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+.security-texto h2{
+    color: var(--cor--titulos-secundaria);
+    font-family: var(--font-principal);
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+    font-weight: 800;
+}
+
+.security-texto p{
+    color: var(--cor-subtitulos-secundaria);
+    font-family: var(--font-principal);
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.services{
+    display: flex;
+    background-color: var(--cor-principal);
+}
+
+.pagamentos{
+    color: var(--cor-titulos-primaria);
+    font-family: var(--font-principal);
+    font-size: 2em;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: 0.5em 0;
+    width: 99%;
+}
+
+.card-pagamentos{
+    background-color: var(--cor-de-fundo);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 65%;
+    margin: 4em 0.8em;
+    box-shadow: rgba(0, 0, 0, 0.152) 0.5em 0.5em 0.5em 0.5em;
+}
+
+.card-pagamentos:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+}
+
+.card-pagamentos img{
+    width: 60%;
+    height: 60%;
+}
+.card-pagamentos-desc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em 0.5em;
+}
+.card-pagamentos-desc p{
+    font-weight: 500;
+    padding: 0.5em 0.5em;
+    font-size: 1em;
+    font-family: var(--font-principal);
+    color: var(--cor-subtitulos-secundaria);
+}
+
+.card-pagamentos-desc h2{
+    font-family: var(--font-principal);
+    padding: 0.2em;
+    font-size: 1.2em;
+    font-weight: 800;
+    cursor: pointer;
+
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.cont-pedido{
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+}
+
+.text-pedido{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em 0;
+}
+
+.text-pedido h2{
+    color: var(--cor--titulos-secundaria);
+    font-family: var(--font-principal);
+    font-size: 1.8em;
+    font-weight: 800;
+    width: 95%;
+}
+
+.text-pedido p{
+    font-family: var(--font-principal);
+    color: var(--cor-subtitulos-secundaria);
+    font-weight: 600;
+    padding: 0.5em 0;
+}
+
+.btn-pedido{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2em;
+}
+
+.btn-playstore{
+    background-color: var(--cor-principal);
+    display: flex;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 0 0.5em;
+}
+
+.btn-playstore:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
+}
+
+.btn-playstore a{
+    font-family: var(--font-principal);
+    color: var(--cor-de-fundo);
+    font-size: 1.5em;
+    padding: 0 0.5em;
+    text-decoration: none;
+}
+
+.btn-applestore{
+    background-color: var(--cor-principal);
+    display: flex;
+    border-radius: 5px;
+    padding: 0.5em;
+    margin: 0 0.5em;
+}
+
+.btn-applestore:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
+}
+
+.btn-applestore a{
+    font-family: var(--font-principal);
+    color: var(--cor-de-fundo);
+    font-size: 1.5em;
+    padding: 0 0.5em;
+    text-decoration: none;
+}
+
+.text-contato{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5em 0;
+}
+
+.text-contato h2{
+    font-family: var(--font-principal);
+    color: var(--cor--titulos-secundaria);
+    font-size: 1.7em;
+    font-weight: 800;
+}
+
+.text-contato p{
+    font-family: var(--font-principal);
+    color: var(--cor-subtitulos-secundaria);
+    font-size: 1.2em;
+    font-weight: 600;
+    width: 90%;
+    padding: 0.3em 0;
+}
+
+.cont-contato{
+    display: flex;
+    justify-content: center;
+    margin: 0.5em;
+}
+
+.tx-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 1em;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: var(--font-principal);
+}
+
+.nossa-empresa{
+    color: var(--cor-subtitulos);
+}
+
+.nossa-empresa li:hover{
+    color: var(--cor-titulos-primaria);
+    transition: 0.3s ease-in;
+}
+
+@media screen and (min-width:320px){
+    .container img.logo-tech{
+       width: 75%;
+       padding-left: 1.5em;
+        box-sizing: border-box;
+       align-self: center;
+    }
+    .navbar-desktop{
+        display: none;
+    }
+
+    .sobre-nos img{
+        width: 40%;
+    }
+
+    .security img{
+        width: 40%;
+    }
+
+    .pagamentos{
+        font-size: 1.7em;
+        margin: 0.1em 0;
+    }
+
+    .card-pagamentos{
+        height: 75%;
+        margin: 30px 10px 5px;
+    }
+
+    .card-pagamentos-desc p{
+        font-size: 0.8em;
+        width: 100%;
+    }
+    
+    .card-pagamentos-desc h2{
+        font-size: 1em;
+        padding: 0;
+    }
+
+    .tx-contato{
+        font-size: 0.9em;
+        width: 100%;
+    }
+
+   .rodape{
+    font-size: 0.8em;
+    }
+
+    .nossa-empresa{
+        padding: 0.5em 0;
+    }
+
+    .nossa-empresa ul, li{
+        align-items: center;
+        width: 95%;
+    }
+}
+
+@media screen and (min-width:480px){
+
+    .navbar-desktop{
+        display: none;
+    }
+
+    .container img.logo-tech{
+        padding-left: 0em;
+     }
+
+     .tx-contato{
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .rodape{
+        font-size: 1em;
+        }
+
+}
+
+@media screen and (min-width:600px){
+
+    .navbar-desktop{
+        display: none;
+    }
+
+    .card-pagamentos{
+        height: 80%;
+        margin: 30px 10px 5px;
+    }
+
+    .card-pagamentos-desc p{
+        font-size: 0.9em;
+        width: 100%;
+    }
+    
+    .card-pagamentos-desc h2{
+        font-size: 1em;
+        padding: 0;
+    }
+
+    .rodape{
+        font-size: 1.2em;
+        }
+}
+
+@media screen and (min-width:801px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .cabecalho_menu-hamburguer{
+        display: none;
+    }
+    .container img.logo-tech{
+        width: 30%;
+        padding: 0em 1em;
+     }
+
+     .navbar-desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 1.5em;
+     }
+
+     .navbar-text{
+        text-decoration: none;
+        font-family: var(--font-principal);
+        color: var(--cor--titulos-secundaria);
+        font-weight: 600;
+        font-size: 1.5em;
+     }
+
+     .navbar-text:hover{
+        color: var(--cor-principal);
+        transition: 0.3s ease-in;
+     }
+
+     .lista-menu-titulo,
+.lista-menu-item{
+    padding: 1em;
+    background-color: var(--cor-principal);
+    transition: 0.3s ease-in;
+}
+
+.btn-peca-agora{
+
+    padding: 0.8em;
+}
+
+.sobre-nos-texto{
+
+    padding: 2.5em;
+}
+
+.sobre-nos-texto h2{
+
+    font-size: 3em;
+}
+
+.sobre-nos-texto p{
+    font-size: 1.8em;
+}
+
+
+.security-texto h2{
+
+    font-size: 3em;
+}
+
+.security-texto p{
+
+    font-size: 1.5em;
+}
+
+.pagamentos{
+    font-size: 3em;
+}
+
+.card-pagamentos{
+    height: 75%;
+    margin: 70px 10px 5px;
+}
+
+.card-pagamentos-desc p{
+    font-size: 1.5em;
+    width: 90%;
+}
+
+.card-pagamentos-desc h2{
+    font-size: 1.5em;
+    padding: 0em;
+}
+
+.cont-pedido img{
+    width: 60%;
+}
+
+.text-pedido{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em 0;
+}
+
+.text-pedido h2{
+    color: var(--cor--titulos-secundaria);
+    font-family: var(--font-principal);
+    font-size: 3em;
+    font-weight: 800;
+    width: 100%;
+}
+
+.text-pedido p{
+    font-family: var(--font-principal);
+    color: var(--cor-subtitulos-secundaria);
+    font-weight: 600;
+    padding: 0.5em 0;
+    font-size: 1.5em;
+    width: 95%;
+}
+
+.btn-pedido{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-playstore{
+
+    padding: 0.9em;
+}
+
+.btn-applestore{
+
+    padding: 0.9em;
+}
+
+.text-contato h2{
+
+    font-size: 2.5em;
+}
+
+.text-contato p{
+
+    font-size: 1.5em;
+}
+
+}
+
+@media screen and (min-width:1025px){
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .cabecalho_menu-hamburguer{
+        display: none;
+    }
+    .container img.logo-tech{
+        width: 30%;
+        padding: 0em 1em;
+     }
+
+     .navbar-desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 1.5em;
+     }
+
+     .navbar-text{
+        text-decoration: none;
+        font-family: var(--font-principal);
+        color: var(--cor--titulos-secundaria);
+        font-weight: 600;
+        font-size: 1.8em;
+     }
+
+     .navbar-text:hover{
+        color: var(--cor-principal);
+        transition: 0.3s ease-in;
+     }
+
+     .sobre-nos-texto{
+        padding: 2.5em;
+        align-self: center;
+    }
+
+    .security img{
+        width: 50%;
+    }
+
+    .security-texto{
+        align-self: center;
+    }
+
+    .security-texto p{
+        font-size: 1.8em;
+    }
+
+     .card-pagamentos{
+        height: 70%;
+        margin: 30px 20px 5px;
+    }
+
+    .btn-pedido{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (min-width:1281px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .cabecalho_menu-hamburguer{
+        display: none;
+    }
+    .container img.logo-tech{
+        width: 30%;
+        padding: 0em 1em;
+     }
+
+     .navbar-desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 1.5em;
+     }
+
+     .navbar-text{
+        text-decoration: none;
+        font-family: var(--font-principal);
+        color: var(--cor--titulos-secundaria);
+        font-weight: 600;
+        font-size: 1.7em;
+     }
+
+     .navbar-text:hover{
+        color: var(--cor-principal);
+        transition: 0.3s ease-in;
+     }
+
+     .sobre-nos-texto{
+        padding: 3em;
+        align-self: auto;
+    }
+    
+    .sobre-nos-texto h2{
+    
+        font-size: 4em;
+    }
+    
+    .sobre-nos-texto p{
+        font-size: 2.5em;
+    }
+
+    .security-texto{
+        padding: 2em 1.5em;
+        align-self: auto;
+    }
+
+    .security-texto h2{
+
+        font-size: 4em;
+    }
+    
+    .security-texto p{
+    
+        font-size: 2.5em;
+    }
+
+    .pagamentos{
+        font-size: 3.5em;
+    }
+    
+    .card-pagamentos{
+        height: 70%;
+        margin: 70px 30px 5px;
+    }
+    
+    .card-pagamentos-desc p{
+        font-size: 1.8em;
+        width: 75%;
+    }
+    
+    .card-pagamentos-desc h2{
+        font-size: 2em;
+        padding: 0.5em;
+    }
+
+    .text-pedido h2{
+        font-size: 3.5em;
+    }
+    
+    .text-pedido p{
+        font-size: 2.5em;
+    }
+
+    .text-pedido{
+        padding: 0em 1.5em;
+    }
+
+    .btn-playstore{
+        font-size: 1.5em;
+        padding: 1em;
+    }
+    
+    .btn-applestore{
+        font-size: 1.5em;
+        padding: 1em;
+    }
+
+    .text-contato p{
+        font-size: 2em;
+    }
+
+    .texto-peca-agora h1{
+        font-size: 3.4em;
+    }
+    .texto-peca-agora p{
+        font-size: 2.9em;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:1500px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .cabecalho_menu-hamburguer{
+        display: none;
+    }
+    .container img.logo-tech{
+        width: 30%;
+        padding: 0em 1em;
+     }
+
+     .navbar-desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 1.5em;
+     }
+
+     .navbar-text{
+        text-decoration: none;
+        font-family: var(--font-principal);
+        color: var(--cor--titulos-secundaria);
+        font-weight: 600;
+        font-size: 2em;
+     }
+
+     .navbar-text:hover{
+        color: var(--cor-principal);
+        transition: 0.3s ease-in;
+     }
+
+     .texto-peca-agora h1{
+        font-size: 2.7em;
+    }
+    .texto-peca-agora p{
+        font-size: 2em;
+        width: 60%;
+    }
+
+     .sobre-nos-texto{
+        align-self: center;
+     }
+
+     .security-texto{
+        align-self: center;
+     }
+
+     .card-pagamentos{
+        height: 65%;
+        margin: 70px 35px 5px;
+    }
+
+    .lista-menu{
+        width: 15vw;
+    }
+
+    .card{
+        width: 100%;
+
+    }
+    .text-contato h2{
+        font-size: 3em;
+        align-items: center;
+    }
+
+    .text-contato p{
+        font-size: 2em;
+        width: 80%;
+    }
+
+    .tx-contato{
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width:1900px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+    }
+
+    .cabecalho_menu-hamburguer{
+        display: none;
+    }
+    .container img.logo-tech{
+        width: 30%;
+        padding: 0em 1em;
+     }
+
+     .navbar-desktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 1.5em;
+     }
+
+     .navbar-text{
+        text-decoration: none;
+        font-family: var(--font-principal);
+        color: var(--cor--titulos-secundaria);
+        font-weight: 600;
+        font-size: 2.5em;
+     }
+
+     .navbar-text:hover{
+        color: var(--cor-principal);
+        transition: 0.3s ease-in;
+     }
+
+     .texto-peca-agora h1{
+        font-size: 2.7em;
+    }
+    .texto-peca-agora p{
+        font-size: 2em;
+        width: 60%;
+    }
+
+     .sobre-nos-texto{
+        align-self: center;
+     }
+
+     .security-texto{
+        align-self: center;
+     }
+
+     .card-pagamentos{
+        height: 65%;
+        margin: 70px 35px 5px;
+    }
+
+    .lista-menu{
+        width: 15vw;
+    }
+
+    .card{
+        width: 100%;
+
+    }
+    .text-contato h2{
+        font-size: 3em;
+        align-items: center;
+    }
+
+    .text-contato p{
+        font-size: 2em;
+        width: 80%;
+    }
+
+    .tx-contato{
+        font-size: 2em;
+    }
+}
